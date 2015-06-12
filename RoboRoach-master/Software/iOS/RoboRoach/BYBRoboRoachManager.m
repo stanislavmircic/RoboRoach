@@ -260,15 +260,9 @@ id <BYBRoboRoachManagerDelegate> delegate;
             if([RSSI longValue]>maximumSignalStrength)
             {
                 maximumSignalStrength = [RSSI longValue];
-                if (!self.peripherals)
-                {
-                    self.peripherals = [[NSMutableArray alloc] initWithObjects:peripheral,nil];
-                }
-                else
-                {
-                    [self.peripherals addObject:peripheral];
-                
-                }
+
+                self.peripherals = [[NSMutableArray alloc] initWithObjects:peripheral,nil];
+                               
             }
             else
             {
