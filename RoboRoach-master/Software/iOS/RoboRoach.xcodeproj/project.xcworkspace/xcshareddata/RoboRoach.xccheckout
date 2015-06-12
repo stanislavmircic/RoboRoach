@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DED5AA90-4408-4F3F-8E57-3E8EE07DAB4E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>RoboRoach</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E9A3016B7A69FACE85BE45DF32B146C5CF6CFC23</key>
 		<string>https://github.com/stanislavmircic/RoboRoach.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>RoboRoach-master/Software/iOS/RoboRoach.xcodeproj/project.xcworkspace</string>
+	<string>RoboRoach-master/Software/iOS/RoboRoach.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E9A3016B7A69FACE85BE45DF32B146C5CF6CFC23</key>

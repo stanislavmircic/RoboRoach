@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6F7A9EF3171A1732004B1575"
-               BuildableName = "RoboRoach.app"
-               BlueprintName = "RoboRoach"
+               BuildableName = "BYB Remote.app"
+               BlueprintName = "BYB Remote"
                ReferencedContainer = "container:RoboRoach.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6F7A9EF3171A1732004B1575"
-            BuildableName = "RoboRoach.app"
-            BlueprintName = "RoboRoach"
+            BuildableName = "BYB Remote.app"
+            BlueprintName = "BYB Remote"
             ReferencedContainer = "container:RoboRoach.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -48,12 +48,13 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6F7A9EF3171A1732004B1575"
-            BuildableName = "RoboRoach.app"
-            BlueprintName = "RoboRoach"
+            BuildableName = "BYB Remote.app"
+            BlueprintName = "BYB Remote"
             ReferencedContainer = "container:RoboRoach.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -66,12 +67,13 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6F7A9EF3171A1732004B1575"
-            BuildableName = "RoboRoach.app"
-            BlueprintName = "RoboRoach"
+            BuildableName = "BYB Remote.app"
+            BlueprintName = "BYB Remote"
             ReferencedContainer = "container:RoboRoach.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

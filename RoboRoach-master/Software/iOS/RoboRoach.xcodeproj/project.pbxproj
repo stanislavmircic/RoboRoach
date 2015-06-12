@@ -65,7 +65,7 @@
 		6F5FE06318273FBC00FA8647 /* battery-95.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "battery-95.png"; sourceTree = "<group>"; };
 		6F6A1183174DA127004465B5 /* ChartBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChartBG.png; sourceTree = "<group>"; };
 		6F6A1184174DA127004465B5 /* ChartBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChartBG@2x.png"; sourceTree = "<group>"; };
-		6F7A9EF4171A1732004B1575 /* RoboRoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoboRoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7A9EF4171A1732004B1575 /* BYB Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BYB Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7A9EF9171A1732004B1575 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6F7A9EFB171A1732004B1575 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6F7A9EFF171A1732004B1575 /* RoboRoach-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoboRoach-Info.plist"; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 		6F7A9EF5171A1732004B1575 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6F7A9EF4171A1732004B1575 /* RoboRoach.app */,
+				6F7A9EF4171A1732004B1575 /* BYB Remote.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,9 +223,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6F7A9EF3171A1732004B1575 /* RoboRoach */ = {
+		6F7A9EF3171A1732004B1575 /* BYB Remote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F7A9F1A171A1732004B1575 /* Build configuration list for PBXNativeTarget "RoboRoach" */;
+			buildConfigurationList = 6F7A9F1A171A1732004B1575 /* Build configuration list for PBXNativeTarget "BYB Remote" */;
 			buildPhases = (
 				6F7A9EF0171A1732004B1575 /* Sources */,
 				6F7A9EF1171A1732004B1575 /* Frameworks */,
@@ -235,9 +235,9 @@
 			);
 			dependencies = (
 			);
-			name = RoboRoach;
+			name = "BYB Remote";
 			productName = RoboRoach;
-			productReference = 6F7A9EF4171A1732004B1575 /* RoboRoach.app */;
+			productReference = 6F7A9EF4171A1732004B1575 /* BYB Remote.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -267,7 +267,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6F7A9EF3171A1732004B1575 /* RoboRoach */,
+				6F7A9EF3171A1732004B1575 /* BYB Remote */,
 			);
 		};
 /* End PBXProject section */
@@ -446,7 +446,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "35bc024c-96f4-4c25-a9e0-f0401cee077a";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "22e5f549-6433-4257-bd8d-1a6376aa1261";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -465,7 +465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F7A9F1A171A1732004B1575 /* Build configuration list for PBXNativeTarget "RoboRoach" */ = {
+		6F7A9F1A171A1732004B1575 /* Build configuration list for PBXNativeTarget "BYB Remote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F7A9F1B171A1732004B1575 /* Debug */,
