@@ -31,6 +31,7 @@ id <BYBRoboRoachManagerDelegate> delegate;
 
 -(int) searchForRoboRoaches:(int) timeout{
     NSLog(@"searchForRoboRoaches() - Entered");
+    maximumSignalStrength = -10000;
     if (self.CM.state  != CBCentralManagerStatePoweredOn) {
         NSLog(@"searchForRoboRoaches() - CoreBluetooth not correctly initialized !\r\n");
         NSLog(@"searchForRoboRoaches() - State = %d (%s)\r\n",self.CM.state,[self centralManagerStateToString:self.CM.state]);
@@ -47,7 +48,9 @@ id <BYBRoboRoachManagerDelegate> delegate;
     
     // Start scanning
     //[self.CM scanForPeripheralsWithServices:@[su] options:0];
-    [self.CM scanForPeripheralsWithServices:nil options:0];
+  //  NSDictionary * dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@YES, CBCentralManagerScanOptionAllowDuplicatesKey, nil];
+    
+    [self.CM scanForPeripheralsWithServices:nil options:NULL];
     
     NSLog(@"searchForRoboRoaches() - Scanning...");
     [NSTimer scheduledTimerWithTimeInterval:(float)timeout target:self selector:@selector(scanTimer:) userInfo:nil repeats:NO];  //Set a timer to Turn Off
@@ -253,14 +256,17 @@ id <BYBRoboRoachManagerDelegate> delegate;
     {
         if ([peripheral.name rangeOfString:@"RoboRoach"].location != NSNotFound || [peripheral.name rangeOfString:@"RoboHuman"].location != NSNotFound) {
             NSLog(@"Found RoboRoach/RoboHuman...\n");
-            if (!self.peripherals)
+            NSLog(@"Signal strength: %ld\n",[RSSI longValue]);
+            if([RSSI longValue]>maximumSignalStrength)
             {
+                maximumSignalStrength = [RSSI longValue];
+
                 self.peripherals = [[NSMutableArray alloc] initWithObjects:peripheral,nil];
+                               
             }
             else
             {
-                [self.peripherals addObject:peripheral];
-            
+                NSLog(@"Avoid connecting to BT device since we have already found device that has greateer signal strength\n");
             }
             //[self connectPeripheral:peripheral];
         } else {
