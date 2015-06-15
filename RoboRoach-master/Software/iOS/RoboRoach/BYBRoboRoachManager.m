@@ -272,9 +272,11 @@ id <BYBRoboRoachManagerDelegate> delegate;
     NSLog(@"Hardware Name: %@",peripheral.name);
     NSLog(@"Hardver ID: %@", peripheral.UUID);
     
-    if(peripheral.name != nil)
+    //0x000000017002cca0 kCBAdvDataServiceUUIDs
+    NSString * nameString = (NSString *)[advertisementData objectForKey:@"kCBAdvDataLocalName"];
+    if(nameString != nil)
     {
-        if ([peripheral.name rangeOfString:@"RoboRoach"].location != NSNotFound || [peripheral.name rangeOfString:@"RoboHuman"].location != NSNotFound) {
+        if ([nameString rangeOfString:@"RoboRoach"].location != NSNotFound || [nameString rangeOfString:@"RoboHuman"].location != NSNotFound) {
             NSLog(@"Found RoboRoach/RoboHuman...\n");
             NSLog(@"Signal strength: %ld\n",[RSSI longValue]);
             if([RSSI longValue]>maximumSignalStrength)
