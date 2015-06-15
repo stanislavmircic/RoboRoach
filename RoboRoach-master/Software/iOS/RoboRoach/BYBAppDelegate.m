@@ -7,7 +7,7 @@
 //
 
 #import "BYBAppDelegate.h"
-
+#import "BYBRoboRoach.h"
 @implementation BYBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -17,13 +17,61 @@
 #pragma clang diagnostic ignored "-Wdeprecated-declarations" //I hate compiler warnings.
     
 
-    [TestFlight takeOff:@"77969e65-27dc-49e0-81fe-03f627c33631"];
+  //  [TestFlight takeOff:@"77969e65-27dc-49e0-81fe-03f627c33631"];
 
 #pragma clang diagnostic pop
     
-    // Override point for customization after application launch.
+    
+    //init shared variables for watch
+    NSUserDefaults * bybRemoteSharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:BYB_SHARED_USER_DEFAULTS];
+    [bybRemoteSharedDefaults setObject:@"false" forKey:BYB_SHARED_INFO_CONNECTION];
+    [bybRemoteSharedDefaults setObject:[NSNumber numberWithFloat:0] forKey:BYB_SHARED_INFO_DURATION];
+    [bybRemoteSharedDefaults setObject:[NSNumber numberWithFloat:0] forKey:BYB_SHARED_INFO_PULSE_WIDTH];
+    [bybRemoteSharedDefaults setObject:[NSNumber numberWithFloat:0] forKey:BYB_SHARED_INFO_GAIN];
+    [bybRemoteSharedDefaults setObject:[NSNumber numberWithFloat:0] forKey:BYB_SHARED_INFO_FREQUENCY];
+    [bybRemoteSharedDefaults setObject:@"false" forKey:BYB_SHARED_INFO_RANDOM];
+    [bybRemoteSharedDefaults synchronize];
+    
     return YES;
 }
+
+
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void(^)(NSDictionary *replyInfo))reply {
+    
+    NSString *messageValue = [userInfo objectForKey:@"command"];
+    
+    if([messageValue isEqualToString:@"left"])
+    {
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:BYB_COMMAND_NOTIFICATION object:@"left"];
+        reply(@{@"command received":messageValue});
+    }
+    
+    if([messageValue isEqualToString:@"right"])
+    {
+        [[NSNotificationCenter defaultCenter] postNotificationName:BYB_COMMAND_NOTIFICATION object:@"right"];
+        reply(@{@"command received":messageValue});
+    }
+    
+    if([messageValue isEqualToString:@"connect"])
+    {
+        [[NSNotificationCenter defaultCenter] postNotificationName:BYB_COMMAND_NOTIFICATION object:@"connect"];
+        reply(@{@"command received":messageValue});
+    }
+    
+    if([messageValue isEqualToString:@"disconnect"])
+    {
+        [[NSNotificationCenter defaultCenter] postNotificationName:BYB_COMMAND_NOTIFICATION object:@"disconnect"];
+        reply(@{@"command received":messageValue});
+    }
+    
+    
+    
+    
+    
+}
+
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {

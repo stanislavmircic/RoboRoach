@@ -28,6 +28,21 @@
 		2410203B1A17F5D700C2BDFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 241020351A17F5D600C2BDFC /* README.md */; };
 		2410203C1A17F5D700C2BDFC /* release_notes.md in Sources */ = {isa = PBXBuildFile; fileRef = 241020361A17F5D600C2BDFC /* release_notes.md */; };
 		245C99401B1F7BCD004286C8 /* SensibleTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245C993F1B1F7BCD004286C8 /* SensibleTableView.framework */; };
+		24ACA27E1B2DCED6003104BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA27D1B2DCED6003104BD /* Images.xcassets */; };
+		24ACA2821B2DCED6003104BD /* BYB Remote WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA2811B2DCED6003104BD /* BYB Remote WatchKit App.app */; };
+		24ACA28A1B2DCED6003104BD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA2881B2DCED6003104BD /* Interface.storyboard */; };
+		24ACA28C1B2DCED6003104BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA28B1B2DCED6003104BD /* Images.xcassets */; };
+		24ACA28F1B2DCED6003104BD /* BYB Remote WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 24ACA2721B2DCED5003104BD /* BYB Remote WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		24ACA29B1B2DD2D3003104BD /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ACA2781B2DCED6003104BD /* InterfaceController.m */; };
+		24ACA29C1B2DD2D3003104BD /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ACA27B1B2DCED6003104BD /* NotificationController.m */; };
+		24ACA2B51B2E3ED7003104BD /* icon24pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA2AD1B2E3ED7003104BD /* icon24pt.png */; };
+		24ACA2B61B2E3ED7003104BD /* icon27.png in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA2AE1B2E3ED7003104BD /* icon27.png */; };
+		24ACA2B71B2E3ED7003104BD /* icon29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA2AF1B2E3ED7003104BD /* icon29@2x.png */; };
+		24ACA2B81B2E3ED7003104BD /* icon29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA2B01B2E3ED7003104BD /* icon29@3x.png */; };
+		24ACA2B91B2E3ED7003104BD /* icon40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA2B11B2E3ED7003104BD /* icon40@2x.png */; };
+		24ACA2BA1B2E3ED7003104BD /* icon44pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA2B21B2E3ED7003104BD /* icon44pt.png */; };
+		24ACA2BB1B2E3ED7003104BD /* icon86pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA2B31B2E3ED7003104BD /* icon86pt.png */; };
+		24ACA2BC1B2E3ED7003104BD /* icon98pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA2B41B2E3ED7003104BD /* icon98pt.png */; };
 		6F089475174EDEA600AF3D7F /* Comic_Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F089474174ED8E500AF3D7F /* Comic_Book.ttf */; };
 		6F280B08173307DA00BDBDF8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F280B07173307DA00BDBDF8 /* libz.dylib */; };
 		6F5FE06418273FBC00FA8647 /* battery-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F5FE05E18273FBC00FA8647 /* battery-0.png */; };
@@ -57,6 +72,37 @@
 		6FFDD11B174EC03A001CDD9C /* BYBRoboRoach_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FFDD11A174EC03A001CDD9C /* BYBRoboRoach_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		24ACA2831B2DCED6003104BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F7A9EEC171A1732004B1575 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24ACA2801B2DCED6003104BD;
+			remoteInfo = "BYB Remote WatchKit App";
+		};
+		24ACA28D1B2DCED6003104BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F7A9EEC171A1732004B1575 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24ACA2711B2DCED5003104BD;
+			remoteInfo = "BYB Remote WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		24ACA2961B2DCED6003104BD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				24ACA28F1B2DCED6003104BD /* BYB Remote WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		240C44081B2B1126009F456B /* connectedbybremote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connectedbybremote.png; sourceTree = "<group>"; };
 		240C44091B2B1126009F456B /* notconnectedbybremote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notconnectedbybremote.png; sourceTree = "<group>"; };
@@ -82,6 +128,28 @@
 		241020381A17F5D600C2BDFC /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		241020391A17F5D600C2BDFC /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		245C993F1B1F7BCD004286C8 /* SensibleTableView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SensibleTableView.framework; sourceTree = "<group>"; };
+		24ACA2721B2DCED5003104BD /* BYB Remote WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BYB Remote WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24ACA2751B2DCED5003104BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "BYB Remote WatchKit Extension/Info.plist"; sourceTree = "<group>"; };
+		24ACA2761B2DCED5003104BD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = file; name = PushNotificationPayload.apns; path = "BYB Remote WatchKit Extension/PushNotificationPayload.apns"; sourceTree = "<group>"; };
+		24ACA2771B2DCED5003104BD /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		24ACA2781B2DCED6003104BD /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		24ACA27A1B2DCED6003104BD /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		24ACA27B1B2DCED6003104BD /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		24ACA27D1B2DCED6003104BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		24ACA2811B2DCED6003104BD /* BYB Remote WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BYB Remote WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24ACA2871B2DCED6003104BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24ACA2891B2DCED6003104BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		24ACA28B1B2DCED6003104BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		24ACA29D1B2DD982003104BD /* BYB Remote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "BYB Remote.entitlements"; path = "BYB Remote/BYB Remote.entitlements"; sourceTree = "<group>"; };
+		24ACA2AD1B2E3ED7003104BD /* icon24pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon24pt.png; sourceTree = "<group>"; };
+		24ACA2AE1B2E3ED7003104BD /* icon27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon27.png; sourceTree = "<group>"; };
+		24ACA2AF1B2E3ED7003104BD /* icon29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon29@2x.png"; sourceTree = "<group>"; };
+		24ACA2B01B2E3ED7003104BD /* icon29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon29@3x.png"; sourceTree = "<group>"; };
+		24ACA2B11B2E3ED7003104BD /* icon40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon40@2x.png"; sourceTree = "<group>"; };
+		24ACA2B21B2E3ED7003104BD /* icon44pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon44pt.png; sourceTree = "<group>"; };
+		24ACA2B31B2E3ED7003104BD /* icon86pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon86pt.png; sourceTree = "<group>"; };
+		24ACA2B41B2E3ED7003104BD /* icon98pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon98pt.png; sourceTree = "<group>"; };
+		24ACA2BD1B2E4C25003104BD /* BYB Remote WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "BYB Remote WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		6F089474174ED8E500AF3D7F /* Comic_Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Comic_Book.ttf; sourceTree = "<group>"; };
 		6F280B07173307DA00BDBDF8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		6F5FE05E18273FBC00FA8647 /* battery-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "battery-0.png"; sourceTree = "<group>"; };
@@ -120,6 +188,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		24ACA26F1B2DCED5003104BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F7A9EF1171A1732004B1575 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,11 +225,71 @@
 			path = TestFlightSDK3.0.2;
 			sourceTree = "<group>";
 		};
+		24ACA2731B2DCED5003104BD /* BYB Remote WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				24ACA2BD1B2E4C25003104BD /* BYB Remote WatchKit Extension.entitlements */,
+				24ACA2771B2DCED5003104BD /* InterfaceController.h */,
+				24ACA2781B2DCED6003104BD /* InterfaceController.m */,
+				24ACA27A1B2DCED6003104BD /* NotificationController.h */,
+				24ACA27B1B2DCED6003104BD /* NotificationController.m */,
+				24ACA27D1B2DCED6003104BD /* Images.xcassets */,
+				24ACA2741B2DCED5003104BD /* Supporting Files */,
+			);
+			path = "BYB Remote WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		24ACA2741B2DCED5003104BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24ACA2751B2DCED5003104BD /* Info.plist */,
+				24ACA2761B2DCED5003104BD /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24ACA2851B2DCED6003104BD /* BYB Remote WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				24ACA29E1B2DE451003104BD /* icons */,
+				24ACA2881B2DCED6003104BD /* Interface.storyboard */,
+				24ACA28B1B2DCED6003104BD /* Images.xcassets */,
+				24ACA2861B2DCED6003104BD /* Supporting Files */,
+			);
+			path = "BYB Remote WatchKit App";
+			sourceTree = "<group>";
+		};
+		24ACA2861B2DCED6003104BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24ACA2871B2DCED6003104BD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24ACA29E1B2DE451003104BD /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				24ACA2AD1B2E3ED7003104BD /* icon24pt.png */,
+				24ACA2AE1B2E3ED7003104BD /* icon27.png */,
+				24ACA2AF1B2E3ED7003104BD /* icon29@2x.png */,
+				24ACA2B01B2E3ED7003104BD /* icon29@3x.png */,
+				24ACA2B11B2E3ED7003104BD /* icon40@2x.png */,
+				24ACA2B21B2E3ED7003104BD /* icon44pt.png */,
+				24ACA2B31B2E3ED7003104BD /* icon86pt.png */,
+				24ACA2B41B2E3ED7003104BD /* icon98pt.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
 		6F7A9EEB171A1732004B1575 = {
 			isa = PBXGroup;
 			children = (
+				24ACA29D1B2DD982003104BD /* BYB Remote.entitlements */,
 				240C440C1B2B1624009F456B /* Images.xcassets */,
 				6F7A9EFD171A1732004B1575 /* RoboRoach */,
+				24ACA2731B2DCED5003104BD /* BYB Remote WatchKit Extension */,
+				24ACA2851B2DCED6003104BD /* BYB Remote WatchKit App */,
 				6F7A9EF6171A1732004B1575 /* Frameworks */,
 				6F7A9EF5171A1732004B1575 /* Products */,
 			);
@@ -164,6 +299,8 @@
 			isa = PBXGroup;
 			children = (
 				6F7A9EF4171A1732004B1575 /* BYB Remote.app */,
+				24ACA2721B2DCED5003104BD /* BYB Remote WatchKit Extension.appex */,
+				24ACA2811B2DCED6003104BD /* BYB Remote WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,6 +390,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		24ACA2711B2DCED5003104BD /* BYB Remote WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24ACA2951B2DCED6003104BD /* Build configuration list for PBXNativeTarget "BYB Remote WatchKit Extension" */;
+			buildPhases = (
+				24ACA26E1B2DCED5003104BD /* Sources */,
+				24ACA26F1B2DCED5003104BD /* Frameworks */,
+				24ACA2701B2DCED5003104BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24ACA2841B2DCED6003104BD /* PBXTargetDependency */,
+			);
+			name = "BYB Remote WatchKit Extension";
+			productName = "BYB Remote WatchKit Extension";
+			productReference = 24ACA2721B2DCED5003104BD /* BYB Remote WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		24ACA2801B2DCED6003104BD /* BYB Remote WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24ACA2941B2DCED6003104BD /* Build configuration list for PBXNativeTarget "BYB Remote WatchKit App" */;
+			buildPhases = (
+				24ACA27F1B2DCED6003104BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BYB Remote WatchKit App";
+			productName = "BYB Remote WatchKit App";
+			productReference = 24ACA2811B2DCED6003104BD /* BYB Remote WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		6F7A9EF3171A1732004B1575 /* BYB Remote */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F7A9F1A171A1732004B1575 /* Build configuration list for PBXNativeTarget "BYB Remote" */;
@@ -260,10 +430,12 @@
 				6F7A9EF0171A1732004B1575 /* Sources */,
 				6F7A9EF1171A1732004B1575 /* Frameworks */,
 				6F7A9EF2171A1732004B1575 /* Resources */,
+				24ACA2961B2DCED6003104BD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				24ACA28E1B2DCED6003104BD /* PBXTargetDependency */,
 			);
 			name = "BYB Remote";
 			productName = RoboRoach;
@@ -280,8 +452,25 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Backyard Brains";
 				TargetAttributes = {
+					24ACA2711B2DCED5003104BD = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = MLGRKD657P;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					24ACA2801B2DCED6003104BD = {
+						CreatedOnToolsVersion = 6.3;
+					};
 					6F7A9EF3171A1732004B1575 = {
 						DevelopmentTeam = MLGRKD657P;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -291,6 +480,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 6F7A9EEB171A1732004B1575;
 			productRefGroup = 6F7A9EF5171A1732004B1575 /* Products */;
@@ -298,11 +488,39 @@
 			projectRoot = "";
 			targets = (
 				6F7A9EF3171A1732004B1575 /* BYB Remote */,
+				24ACA2711B2DCED5003104BD /* BYB Remote WatchKit Extension */,
+				24ACA2801B2DCED6003104BD /* BYB Remote WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		24ACA2701B2DCED5003104BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24ACA27E1B2DCED6003104BD /* Images.xcassets in Resources */,
+				24ACA2821B2DCED6003104BD /* BYB Remote WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24ACA27F1B2DCED6003104BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24ACA28A1B2DCED6003104BD /* Interface.storyboard in Resources */,
+				24ACA2BC1B2E3ED7003104BD /* icon98pt.png in Resources */,
+				24ACA2B91B2E3ED7003104BD /* icon40@2x.png in Resources */,
+				24ACA2B51B2E3ED7003104BD /* icon24pt.png in Resources */,
+				24ACA28C1B2DCED6003104BD /* Images.xcassets in Resources */,
+				24ACA2BA1B2E3ED7003104BD /* icon44pt.png in Resources */,
+				24ACA2B71B2E3ED7003104BD /* icon29@2x.png in Resources */,
+				24ACA2B61B2E3ED7003104BD /* icon27.png in Resources */,
+				24ACA2B81B2E3ED7003104BD /* icon29@3x.png in Resources */,
+				24ACA2BB1B2E3ED7003104BD /* icon86pt.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F7A9EF2171A1732004B1575 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +564,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		24ACA26E1B2DCED5003104BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24ACA29B1B2DD2D3003104BD /* InterfaceController.m in Sources */,
+				24ACA29C1B2DD2D3003104BD /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F7A9EF0171A1732004B1575 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,7 +590,157 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		24ACA2841B2DCED6003104BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24ACA2801B2DCED6003104BD /* BYB Remote WatchKit App */;
+			targetProxy = 24ACA2831B2DCED6003104BD /* PBXContainerItemProxy */;
+		};
+		24ACA28E1B2DCED6003104BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24ACA2711B2DCED5003104BD /* BYB Remote WatchKit Extension */;
+			targetProxy = 24ACA28D1B2DCED6003104BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24ACA2881B2DCED6003104BD /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24ACA2891B2DCED6003104BD /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		24ACA2901B2DCED6003104BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "BYB Remote WatchKit Extension/BYB Remote WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "BYB Remote WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		24ACA2911B2DCED6003104BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "BYB Remote WatchKit Extension/BYB Remote WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "BYB Remote WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		24ACA2921B2DCED6003104BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IBSC_MODULE = BYB_Remote_WatchKit_Extension;
+				INFOPLIST_FILE = "BYB Remote WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		24ACA2931B2DCED6003104BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IBSC_MODULE = BYB_Remote_WatchKit_Extension;
+				INFOPLIST_FILE = "BYB Remote WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		6F7A9F18171A1732004B1575 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -428,6 +805,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "BYB Remote/BYB Remote.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -445,7 +823,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoboRoach/RoboRoach-Prefix.pch";
 				INFOPLIST_FILE = "RoboRoach/RoboRoach-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/TestFlight",
 					"$(PROJECT_DIR)/TestFlightSDK3.0.2",
@@ -465,8 +843,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "BYB Remote/BYB Remote.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Static\\\\\\ Frameworks",
@@ -482,7 +861,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoboRoach/RoboRoach-Prefix.pch";
 				INFOPLIST_FILE = "RoboRoach/RoboRoach-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/TestFlight",
 					"$(PROJECT_DIR)/TestFlightSDK3.0.2",
@@ -500,6 +879,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		24ACA2941B2DCED6003104BD /* Build configuration list for PBXNativeTarget "BYB Remote WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24ACA2921B2DCED6003104BD /* Debug */,
+				24ACA2931B2DCED6003104BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		24ACA2951B2DCED6003104BD /* Build configuration list for PBXNativeTarget "BYB Remote WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24ACA2901B2DCED6003104BD /* Debug */,
+				24ACA2911B2DCED6003104BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6F7A9EEF171A1732004B1575 /* Build configuration list for PBXProject "RoboRoach" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

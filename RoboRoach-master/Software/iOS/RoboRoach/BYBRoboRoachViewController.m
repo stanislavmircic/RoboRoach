@@ -8,6 +8,7 @@
 
 #import "BYBRoboRoachViewController.h"
 #import "BYBRoboRoachSettingsViewController.h"
+#import "BYBAppDelegate.h"
 
 @interface BYBRoboRoachViewController() {
     
@@ -72,9 +73,46 @@ BOOL isConnected = NO;
     
     rr = [[BYBRoboRoachManager alloc] init];   // Init BYBRoboRoachManager class.
     rr.delegate = self;  //Start recieveing RoboRoach updates
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reactOnWatchCommand:) name:BYB_COMMAND_NOTIFICATION object:nil];
 }
 
 
+- (void) reactOnWatchCommand:(NSNotification *) notification
+{
+    NSString *watchCommand = [notification object];
+    NSLog(@"Command from notification: %@", watchCommand);
+    if([watchCommand isEqualToString:@"left"])
+    {
+        NSLog(@"Go left watch");
+        [rr.activeRoboRoach goLeft];
+    }
+    
+    if([watchCommand isEqualToString:@"right"])
+    {
+        NSLog(@"Go right watch ");
+        [rr.activeRoboRoach goRight];
+    }
+    
+    if([watchCommand isEqualToString:@"connect"])
+    {
+        NSLog(@"Connect watch");
+        if(!isConnected)
+        {
+            [self connectButtonClicked:nil];
+        }
+
+    }
+    
+    if([watchCommand isEqualToString:@"disconnect"])
+    {
+        NSLog(@"Disconnect watch");
+        if(isConnected)
+        {
+            [self connectButtonClicked:nil];
+        }
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -174,7 +212,7 @@ BOOL isConnected = NO;
 
 
 - (void) didSearchForRoboRoaches: (NSArray*)foundRoboRoaches{
-    NSLog(@"didSearchForRoboRoaches:foundRoboRoaches[%i]",foundRoboRoaches.count);
+    NSLog(@"didSearchForRoboRoaches:foundRoboRoaches[%lu]",(unsigned long)foundRoboRoaches.count);
     
     [spinner setHidden:YES];
     [spinner stopAnimating];

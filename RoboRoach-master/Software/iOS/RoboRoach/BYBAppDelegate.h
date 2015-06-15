@@ -13,6 +13,15 @@
 #import "TestFlight.h"
 #endif
 
+#define BYB_COMMAND_NOTIFICATION @"bybCommandNotification"
+#define BYB_SHARED_USER_DEFAULTS @"group.bybremote"
+#define BYB_SHARED_INFO_CONNECTION @"bybConnectionInfo"
+#define BYB_SHARED_INFO_DURATION @"bybDurationInfo"
+#define BYB_SHARED_INFO_PULSE_WIDTH @"bybPulseWidthInfo"
+#define BYB_SHARED_INFO_GAIN @"bybGainInfo"
+#define BYB_SHARED_INFO_FREQUENCY @"bybFrequencyInfo"
+#define BYB_SHARED_INFO_RANDOM @"bybRandomInfo"
+
 @interface BYBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

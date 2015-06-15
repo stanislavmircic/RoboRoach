@@ -7,7 +7,7 @@
 //
 
 #import "BYBRoboRoachManager.h"
-
+#import "BYBAppDelegate.h"
 @implementation BYBRoboRoachManager
 
 // delegate bookkeeping
@@ -30,6 +30,11 @@ id <BYBRoboRoachManagerDelegate> delegate;
 }
 
 -(int) searchForRoboRoaches:(int) timeout{
+    
+    NSUserDefaults * bybRemoteSharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:BYB_SHARED_USER_DEFAULTS];
+    [bybRemoteSharedDefaults setObject:@"search" forKey:BYB_SHARED_INFO_CONNECTION];
+    [bybRemoteSharedDefaults synchronize];
+    
     NSLog(@"searchForRoboRoaches() - Entered");
     maximumSignalStrength = -10000;
     if (self.CM.state  != CBCentralManagerStatePoweredOn) {
@@ -62,13 +67,20 @@ id <BYBRoboRoachManagerDelegate> delegate;
 -(int) connectToRoboRoach:(BYBRoboRoach *) roboRoach{
     self.activeRoboRoach = roboRoach;
     [self connectPeripheral:self.activeRoboRoach.peripheral];
-    
+    //set shared variables for watch
+    NSUserDefaults * bybRemoteSharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:BYB_SHARED_USER_DEFAULTS];
+    [bybRemoteSharedDefaults setObject:@"true" forKey:BYB_SHARED_INFO_CONNECTION];
+    [bybRemoteSharedDefaults synchronize];
     
     //[self getAllServicesFromRoboRoach:self.activeRoboRoach.peripheral];
     return 0;
 }
 
 -(int) disconnectFromRoboRoach{
+    //set shared variables for watch
+    NSUserDefaults * bybRemoteSharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:BYB_SHARED_USER_DEFAULTS];
+    [bybRemoteSharedDefaults setObject:@"false" forKey:BYB_SHARED_INFO_CONNECTION];
+    [bybRemoteSharedDefaults synchronize];
     
     [self.CM cancelPeripheralConnection:self.activeRoboRoach.peripheral];
     self.activeRoboRoach = nil;
@@ -141,16 +153,24 @@ id <BYBRoboRoachManagerDelegate> delegate;
     [self.CM stopScan];
     NSLog(@"[local] Stopped Scanning");
     NSLog(@"[local] Known peripherals : %d",[self->_peripherals count]);
-    
+    NSUserDefaults * bybRemoteSharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:BYB_SHARED_USER_DEFAULTS];
     [self printKnownPeripherals];
     if ([_peripherals count] > 0 ){
         BYBRoboRoach * r = [[BYBRoboRoach alloc] init];
         r.peripheral = _peripherals[0];
         [[self delegate] didSearchForRoboRoaches:@[r]];
+
+        [bybRemoteSharedDefaults setObject:@"true" forKey:BYB_SHARED_INFO_CONNECTION];
+        
     }
     else{
+    
+        [bybRemoteSharedDefaults setObject:@"false" forKey:BYB_SHARED_INFO_CONNECTION];
+        
+        
         [[self delegate] didSearchForRoboRoaches:@[]];
     }
+    [bybRemoteSharedDefaults synchronize];
     
 }
 
