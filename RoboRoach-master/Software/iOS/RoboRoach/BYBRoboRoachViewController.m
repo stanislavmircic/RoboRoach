@@ -170,7 +170,11 @@ BOOL isConnected = NO;
         [spinner startAnimating];
         [connectButton setTitle:@"Searching..." forState:UIControlStateNormal];
         [connectButton setEnabled:NO];
-                
+        
+        NSUserDefaults * bybRemoteSharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:BYB_SHARED_USER_DEFAULTS];
+        [bybRemoteSharedDefaults setObject:@"search" forKey:BYB_SHARED_INFO_CONNECTION];
+        [bybRemoteSharedDefaults synchronize];
+        
         [rr searchForRoboRoaches:4];
         
     }else{
@@ -254,6 +258,10 @@ BOOL isConnected = NO;
     [connectButton setEnabled:YES];
     [connectButton setTitle:@"Find Signal Generator" forState:UIControlStateNormal];
     
+    //set shared variables for watch
+    NSUserDefaults * bybRemoteSharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:BYB_SHARED_USER_DEFAULTS];
+    [bybRemoteSharedDefaults setObject:@"false" forKey:BYB_SHARED_INFO_CONNECTION];
+    [bybRemoteSharedDefaults synchronize];
     
     
 }
@@ -262,6 +270,11 @@ BOOL isConnected = NO;
     NSLog(@"roboRoachReady");
     
     isConnected = YES;
+    
+    //set shared variables for watch
+    NSUserDefaults * bybRemoteSharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:BYB_SHARED_USER_DEFAULTS];
+    [bybRemoteSharedDefaults setObject:@"true" forKey:BYB_SHARED_INFO_CONNECTION];
+    [bybRemoteSharedDefaults synchronize];
     
     [connectButton setTitle:@"Disconnect" forState:UIControlStateNormal];
     [connectButton setEnabled:YES];

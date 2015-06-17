@@ -27,6 +27,12 @@
 		2410203A1A17F5D600C2BDFC /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 241020341A17F5D600C2BDFC /* libTestFlight.a */; };
 		2410203B1A17F5D700C2BDFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 241020351A17F5D600C2BDFC /* README.md */; };
 		2410203C1A17F5D700C2BDFC /* release_notes.md in Sources */ = {isa = PBXBuildFile; fileRef = 241020361A17F5D600C2BDFC /* release_notes.md */; };
+		241C8A6D1B2FE36500CEFCEE /* control@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 241C8A691B2FE36500CEFCEE /* control@2x.png */; };
+		241C8A6E1B2FE36500CEFCEE /* left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 241C8A6A1B2FE36500CEFCEE /* left@2x.png */; };
+		241C8A6F1B2FE36500CEFCEE /* right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 241C8A6B1B2FE36500CEFCEE /* right@2x.png */; };
+		241C8A701B2FE36500CEFCEE /* setings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 241C8A6C1B2FE36500CEFCEE /* setings@2x.png */; };
+		241C8AED1B30BC2700CEFCEE /* signalboardoff.png in Resources */ = {isa = PBXBuildFile; fileRef = 241C8ADD1B30BC2700CEFCEE /* signalboardoff.png */; };
+		241C8AF01B310DD400CEFCEE /* BYBErrorInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241C8AEF1B310DD400CEFCEE /* BYBErrorInterfaceController.m */; };
 		245C99401B1F7BCD004286C8 /* SensibleTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245C993F1B1F7BCD004286C8 /* SensibleTableView.framework */; };
 		24ACA27E1B2DCED6003104BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA27D1B2DCED6003104BD /* Images.xcassets */; };
 		24ACA2821B2DCED6003104BD /* BYB Remote WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 24ACA2811B2DCED6003104BD /* BYB Remote WatchKit App.app */; };
@@ -127,6 +133,13 @@
 		241020371A17F5D600C2BDFC /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
 		241020381A17F5D600C2BDFC /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		241020391A17F5D600C2BDFC /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		241C8A691B2FE36500CEFCEE /* control@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "control@2x.png"; sourceTree = "<group>"; };
+		241C8A6A1B2FE36500CEFCEE /* left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left@2x.png"; sourceTree = "<group>"; };
+		241C8A6B1B2FE36500CEFCEE /* right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right@2x.png"; sourceTree = "<group>"; };
+		241C8A6C1B2FE36500CEFCEE /* setings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setings@2x.png"; sourceTree = "<group>"; };
+		241C8ADD1B30BC2700CEFCEE /* signalboardoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signalboardoff.png; sourceTree = "<group>"; };
+		241C8AEE1B310DD400CEFCEE /* BYBErrorInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYBErrorInterfaceController.h; sourceTree = "<group>"; };
+		241C8AEF1B310DD400CEFCEE /* BYBErrorInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYBErrorInterfaceController.m; sourceTree = "<group>"; };
 		245C993F1B1F7BCD004286C8 /* SensibleTableView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SensibleTableView.framework; sourceTree = "<group>"; };
 		24ACA2721B2DCED5003104BD /* BYB Remote WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BYB Remote WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24ACA2751B2DCED5003104BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "BYB Remote WatchKit Extension/Info.plist"; sourceTree = "<group>"; };
@@ -225,6 +238,21 @@
 			path = TestFlightSDK3.0.2;
 			sourceTree = "<group>";
 		};
+		241C8A9B1B30B62A00CEFCEE /* animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
+		241C8ACD1B30BC2700CEFCEE /* animationbyb */ = {
+			isa = PBXGroup;
+			children = (
+				241C8ADD1B30BC2700CEFCEE /* signalboardoff.png */,
+			);
+			path = animationbyb;
+			sourceTree = "<group>";
+		};
 		24ACA2731B2DCED5003104BD /* BYB Remote WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +263,8 @@
 				24ACA27B1B2DCED6003104BD /* NotificationController.m */,
 				24ACA27D1B2DCED6003104BD /* Images.xcassets */,
 				24ACA2741B2DCED5003104BD /* Supporting Files */,
+				241C8AEE1B310DD400CEFCEE /* BYBErrorInterfaceController.h */,
+				241C8AEF1B310DD400CEFCEE /* BYBErrorInterfaceController.m */,
 			);
 			path = "BYB Remote WatchKit Extension";
 			sourceTree = "<group>";
@@ -270,6 +300,12 @@
 		24ACA29E1B2DE451003104BD /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				241C8ACD1B30BC2700CEFCEE /* animationbyb */,
+				241C8A9B1B30B62A00CEFCEE /* animation */,
+				241C8A691B2FE36500CEFCEE /* control@2x.png */,
+				241C8A6A1B2FE36500CEFCEE /* left@2x.png */,
+				241C8A6B1B2FE36500CEFCEE /* right@2x.png */,
+				241C8A6C1B2FE36500CEFCEE /* setings@2x.png */,
 				24ACA2AD1B2E3ED7003104BD /* icon24pt.png */,
 				24ACA2AE1B2E3ED7003104BD /* icon27.png */,
 				24ACA2AF1B2E3ED7003104BD /* icon29@2x.png */,
@@ -511,13 +547,18 @@
 				24ACA28A1B2DCED6003104BD /* Interface.storyboard in Resources */,
 				24ACA2BC1B2E3ED7003104BD /* icon98pt.png in Resources */,
 				24ACA2B91B2E3ED7003104BD /* icon40@2x.png in Resources */,
+				241C8A6D1B2FE36500CEFCEE /* control@2x.png in Resources */,
 				24ACA2B51B2E3ED7003104BD /* icon24pt.png in Resources */,
 				24ACA28C1B2DCED6003104BD /* Images.xcassets in Resources */,
 				24ACA2BA1B2E3ED7003104BD /* icon44pt.png in Resources */,
 				24ACA2B71B2E3ED7003104BD /* icon29@2x.png in Resources */,
 				24ACA2B61B2E3ED7003104BD /* icon27.png in Resources */,
+				241C8AED1B30BC2700CEFCEE /* signalboardoff.png in Resources */,
 				24ACA2B81B2E3ED7003104BD /* icon29@3x.png in Resources */,
+				241C8A701B2FE36500CEFCEE /* setings@2x.png in Resources */,
+				241C8A6F1B2FE36500CEFCEE /* right@2x.png in Resources */,
 				24ACA2BB1B2E3ED7003104BD /* icon86pt.png in Resources */,
+				241C8A6E1B2FE36500CEFCEE /* left@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24ACA29B1B2DD2D3003104BD /* InterfaceController.m in Sources */,
+				241C8AF01B310DD400CEFCEE /* BYBErrorInterfaceController.m in Sources */,
 				24ACA29C1B2DD2D3003104BD /* NotificationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -886,6 +928,7 @@
 				24ACA2931B2DCED6003104BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24ACA2951B2DCED6003104BD /* Build configuration list for PBXNativeTarget "BYB Remote WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -894,6 +937,7 @@
 				24ACA2911B2DCED6003104BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F7A9EEF171A1732004B1575 /* Build configuration list for PBXProject "RoboRoach" */ = {
 			isa = XCConfigurationList;

@@ -14,6 +14,7 @@
     int whaitingForConnection;
     int appIsConnected;
     int animationDots;
+    BOOL mainAppIsActive;
 }
 
 @end
@@ -27,6 +28,7 @@
 @synthesize connectBtn;
 @synthesize statusLabel;
 @synthesize connectingLabel;
+@synthesize connectingAnimation;
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
@@ -38,8 +40,15 @@
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
+    if(appIsConnected)
+    {
+        [actionsGroup setHidden:false];
+    }
+    else
+    {
+        [actionsGroup setHidden:true];
+    }
     
-    [actionsGroup setHidden:true];
     animationDots = 0;
     [NSTimer scheduledTimerWithTimeInterval:0.6
                                      target:self
@@ -65,7 +74,8 @@
         [connectBtn setTitle:@"Disconnect"];
         [connectBtn setHidden:false];
         
-        [connectingLabel setHidden:true];
+       // [connectingLabel setHidden:true];
+        [connectingAnimation setHidden:true];
         
         [statusLabel setText:@"Remote connected"];
         
@@ -77,7 +87,8 @@
         [connectBtn setTitle:@"Disconnect"];
         [connectBtn setHidden:true];
         
-        [connectingLabel setHidden:false];
+//        [connectingLabel setHidden:false];
+        [connectingAnimation setHidden:false];
         
         animationDots++;
         if(animationDots>5)
@@ -104,7 +115,8 @@
         [connectBtn setTitle:@"Connect"];
         [connectBtn setHidden:false];
         
-        [connectingLabel setHidden:true];
+//        [connectingLabel setHidden:true];
+        [connectingAnimation setHidden:true];
         
         [statusLabel setText:@"Remote not connected"];
         
@@ -134,8 +146,8 @@
         appIsConnected = 0;
     }
     
-    
-
+    NSString * mainAppState = [bybRemoteSharedDefaults stringForKey:BYB_SHARED_INFO_ACTIVE];
+    mainAppIsActive = [mainAppState isEqualToString:@"active"];
 }
 
 - (IBAction)leftBtnClick {
@@ -178,6 +190,14 @@
     }
     else if([connectionState isEqualToString:@"false"])
     {
+        //check if main app on iPhone is active
+        if(!mainAppIsActive)
+        {
+            [self presentControllerWithName:@"errorview" context:nil];
+            return;
+        }
+        
+        //send commands to scan for remote and connect
         NSDictionary *applicationData = [[NSDictionary alloc] initWithObjects:@[@"connect"] forKeys:@[@"command"]];
         [WKInterfaceController openParentApplication:applicationData reply:^(NSDictionary *replyInfo, NSError *error) {
             NSLog(@"%@ %@",replyInfo, error);

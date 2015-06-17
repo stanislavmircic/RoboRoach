@@ -10,26 +10,29 @@
             <objects>
                 <controller title="BYB Remote" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label width="136" height="53" alignment="left" text="Remote not connected" textAlignment="center" numberOfLines="2" id="dDS-Vb-2Ha"/>
+                        <label width="136" height="50" alignment="left" text="Remote not connected" textAlignment="center" numberOfLines="2" id="dDS-Vb-2Ha"/>
                         <group width="1" alignment="left" id="mmM-B4-Zjz">
                             <items>
                                 <button width="123" alignment="center" verticalAlignment="center" title="Connect" id="PPS-mF-HaN">
-                                    <color key="backgroundColor" red="1" green="0.52549022440000004" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="backgroundColor" red="0.8901960784313725" green="0.33854512429582578" blue="0.10906841576727176" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="connectBtnClick" destination="AgC-eL-Hgc" id="mAf-a5-F4Y"/>
                                     </connections>
                                 </button>
                                 <label alignment="center" verticalAlignment="center" hidden="YES" text="Connecting..." id="MsR-Hl-fEt"/>
+                                <imageView alignment="center" verticalAlignment="center" hidden="YES" image="bframe" contentMode="scaleAspectFill" animationDuration="1" id="nZi-SX-Jbt"/>
                             </items>
                         </group>
                         <group width="1" alignment="left" id="Wnc-cR-KAM">
                             <items>
-                                <button width="55" alignment="left" title="Con" id="Pzq-iw-pb2">
+                                <button alignment="left" id="Pzq-iw-pb2">
+                                    <group key="contentGroup" width="45" height="41" alignment="left" backgroundImage="control.png" id="Cdz-mE-v3x"/>
                                     <connections>
                                         <segue destination="oJL-pv-XQg" kind="push" id="4ZQ-BM-VJB"/>
                                     </connections>
                                 </button>
-                                <button width="55" alignment="right" title="Set" id="f5V-bK-xG7">
+                                <button width="41" height="41" alignment="right" backgroundImage="setings.png" id="f5V-bK-xG7">
+                                    <accessibilityTraits key="accessibilityTraits" none="YES" button="YES" image="YES"/>
                                     <connections>
                                         <segue destination="jOe-PJ-a3C" kind="push" id="xhL-ZI-dkx"/>
                                     </connections>
@@ -42,6 +45,7 @@
                         <outlet property="actionsGroup" destination="Wnc-cR-KAM" id="ygj-PN-GMs"/>
                         <outlet property="commandBtn" destination="Pzq-iw-pb2" id="D9i-lB-smL"/>
                         <outlet property="connectBtn" destination="PPS-mF-HaN" id="Rop-7i-IAL"/>
+                        <outlet property="connectingAnimation" destination="nZi-SX-Jbt" id="wkg-Ft-vAK"/>
                         <outlet property="connectingLabel" destination="MsR-Hl-fEt" id="mg3-et-xTW"/>
                         <outlet property="leftBtn" destination="dz0-EO-oY1" id="EwB-tM-NmI"/>
                         <outlet property="rightBtn" destination="iPt-eJ-w65" id="wNs-9o-NFZ"/>
@@ -50,23 +54,47 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="217"/>
+            <point key="canvasLocation" x="220" y="210"/>
+        </scene>
+        <!--errorview-->
+        <scene sceneID="UIU-u8-0Hz">
+            <objects>
+                <controller identifier="errorview" id="cum-PC-Uet" customClass="BYBErrorInterfaceController">
+                    <items>
+                        <group width="1" height="97" alignment="center" id="BGM-Mc-ATH">
+                            <items>
+                                <label width="136" height="94" alignment="left" text="To search for BYB remotes, you must first open iPhone app." textAlignment="center" numberOfLines="4" id="zO7-rD-sqh"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="OK" id="r9N-51-ISA">
+                            <connections>
+                                <action selector="okButtonClick" destination="cum-PC-Uet" id="vdP-42-Hfp"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="mainLbl" destination="zO7-rD-sqh" id="Dvo-bg-V1I"/>
+                        <outlet property="okButton" destination="r9N-51-ISA" id="2JR-vs-e3Q"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="443" y="118"/>
         </scene>
         <!--Control-->
         <scene sceneID="ozN-bT-c6v">
             <objects>
                 <controller title="Control" id="oJL-pv-XQg" customClass="InterfaceController">
                     <items>
-                        <group width="1" height="51" alignment="left" verticalAlignment="center" id="RyG-u8-RlO">
+                        <group width="1" height="60" alignment="left" verticalAlignment="center" id="RyG-u8-RlO">
                             <items>
-                                <button width="50" alignment="left" title="Left" id="dz0-EO-oY1">
+                                <button width="55" height="55" alignment="left" backgroundImage="left.png" id="dz0-EO-oY1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="1" green="0.52549022440000004" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                     <connections>
                                         <action selector="leftBtnClick" destination="oJL-pv-XQg" id="bsc-nY-a0t"/>
                                     </connections>
                                 </button>
-                                <button width="50" alignment="right" title="Right" id="iPt-eJ-w65">
+                                <button width="55" height="55" alignment="right" backgroundImage="right.png" id="iPt-eJ-w65">
                                     <color key="backgroundColor" red="1" green="0.52549022440000004" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                     <connections>
                                         <action selector="rightBtnClick" destination="oJL-pv-XQg" id="AR4-ko-5tt"/>
@@ -94,14 +122,38 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="220" y="699"/>
         </scene>
         <!--Settings-->
         <scene sceneID="379-Bb-8nF">
             <objects>
                 <controller title="Settings" id="jOe-PJ-a3C">
                     <items>
-                        <label height="47" alignment="center" verticalAlignment="center" text="BYB Remote parameters" textAlignment="center" numberOfLines="2" id="3Nx-9u-bzc"/>
+                        <label alignment="left" text="Duration" id="gwQ-Zu-mLn"/>
+                        <slider width="1" alignment="left" value="10" minimum="10" maximum="2000" steps="2000" id="Hyw-RX-wBz">
+                            <color key="color" red="1" green="0.52549022440000004" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
+                        </slider>
+                        <separator alignment="left" id="OYY-i1-J96">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <label alignment="left" text="Gain" id="vSR-p7-pQa"/>
+                        <slider width="1" alignment="left" continuous="YES" value="1" maximum="100" steps="100" id="uhl-xw-Q76">
+                            <color key="color" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </slider>
+                        <separator alignment="left" id="AOh-kK-viI">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <label alignment="left" text="Frequency" id="uXd-RE-r11"/>
+                        <slider width="1" alignment="left" value="1" minimum="1" maximum="125" steps="125" id="tG4-uG-9F9">
+                            <color key="color" red="0.89019607840000003" green="0.34787023630000002" blue="0.13470837120000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </slider>
+                        <separator alignment="left" id="zZi-tJ-ze9">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <label alignment="left" text="Pulse Width" id="46l-R6-hJp"/>
+                        <slider width="1" alignment="left" value="1" minimum="1" maximum="10" steps="10" id="eEa-2P-GYK">
+                            <color key="color" red="1" green="0.52549022440000004" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
+                        </slider>
                     </items>
                 </controller>
             </objects>
@@ -112,7 +164,7 @@
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="470" y="699"/>
         </scene>
     </scenes>
 </document>

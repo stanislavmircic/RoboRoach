@@ -14,7 +14,9 @@
 #endif
 
 #define BYB_COMMAND_NOTIFICATION @"bybCommandNotification"
+
 #define BYB_SHARED_USER_DEFAULTS @"group.bybremote"
+#define BYB_SHARED_INFO_ACTIVE @"bybActivityInfo"
 #define BYB_SHARED_INFO_CONNECTION @"bybConnectionInfo"
 #define BYB_SHARED_INFO_DURATION @"bybDurationInfo"
 #define BYB_SHARED_INFO_PULSE_WIDTH @"bybPulseWidthInfo"
