@@ -17,7 +17,7 @@
 #pragma clang diagnostic ignored "-Wdeprecated-declarations" //I hate compiler warnings.
     
 
-    [TestFlight takeOff:@"77969e65-27dc-49e0-81fe-03f627c33631"];
+    
 
 #pragma clang diagnostic pop
     

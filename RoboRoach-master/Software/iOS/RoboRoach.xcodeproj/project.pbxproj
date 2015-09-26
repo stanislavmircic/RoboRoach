@@ -24,9 +24,6 @@
 		240C44271B2B28E0009F456B /* splash1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 240C44221B2B28E0009F456B /* splash1136.png */; };
 		240C44281B2B28E0009F456B /* splash1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 240C44231B2B28E0009F456B /* splash1334.png */; };
 		240C44291B2B28E0009F456B /* splash2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 240C44241B2B28E0009F456B /* splash2208.png */; };
-		2410203A1A17F5D600C2BDFC /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 241020341A17F5D600C2BDFC /* libTestFlight.a */; };
-		2410203B1A17F5D700C2BDFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 241020351A17F5D600C2BDFC /* README.md */; };
-		2410203C1A17F5D700C2BDFC /* release_notes.md in Sources */ = {isa = PBXBuildFile; fileRef = 241020361A17F5D600C2BDFC /* release_notes.md */; };
 		245C99401B1F7BCD004286C8 /* SensibleTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245C993F1B1F7BCD004286C8 /* SensibleTableView.framework */; };
 		6F089475174EDEA600AF3D7F /* Comic_Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F089474174ED8E500AF3D7F /* Comic_Book.ttf */; };
 		6F280B08173307DA00BDBDF8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F280B07173307DA00BDBDF8 /* libz.dylib */; };
@@ -75,12 +72,6 @@
 		240C44221B2B28E0009F456B /* splash1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash1136.png; sourceTree = "<group>"; };
 		240C44231B2B28E0009F456B /* splash1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash1334.png; sourceTree = "<group>"; };
 		240C44241B2B28E0009F456B /* splash2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash2208.png; sourceTree = "<group>"; };
-		241020341A17F5D600C2BDFC /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		241020351A17F5D600C2BDFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		241020361A17F5D600C2BDFC /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = release_notes.md; sourceTree = "<group>"; };
-		241020371A17F5D600C2BDFC /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		241020381A17F5D600C2BDFC /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
-		241020391A17F5D600C2BDFC /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		245C993F1B1F7BCD004286C8 /* SensibleTableView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SensibleTableView.framework; sourceTree = "<group>"; };
 		6F089474174ED8E500AF3D7F /* Comic_Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Comic_Book.ttf; sourceTree = "<group>"; };
 		6F280B07173307DA00BDBDF8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -126,7 +117,6 @@
 			files = (
 				6F280B08173307DA00BDBDF8 /* libz.dylib in Frameworks */,
 				245C99401B1F7BCD004286C8 /* SensibleTableView.framework in Frameworks */,
-				2410203A1A17F5D600C2BDFC /* libTestFlight.a in Frameworks */,
 				6F7A9F2E171A5CD3004B1575 /* CoreBluetooth.framework in Frameworks */,
 				6F7A9EFA171A1732004B1575 /* Foundation.framework in Frameworks */,
 				6FBAF568172442CF00C8E3D1 /* UIKit.framework in Frameworks */,
@@ -137,19 +127,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		241020331A17F5D600C2BDFC /* TestFlightSDK3.0.2 */ = {
-			isa = PBXGroup;
-			children = (
-				241020341A17F5D600C2BDFC /* libTestFlight.a */,
-				241020351A17F5D600C2BDFC /* README.md */,
-				241020361A17F5D600C2BDFC /* release_notes.md */,
-				241020371A17F5D600C2BDFC /* TestFlight+AsyncLogging.h */,
-				241020381A17F5D600C2BDFC /* TestFlight+ManualSessions.h */,
-				241020391A17F5D600C2BDFC /* TestFlight.h */,
-			);
-			path = TestFlightSDK3.0.2;
-			sourceTree = "<group>";
-		};
 		6F7A9EEB171A1732004B1575 = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				245C993F1B1F7BCD004286C8 /* SensibleTableView.framework */,
-				241020331A17F5D600C2BDFC /* TestFlightSDK3.0.2 */,
 				6F280B07173307DA00BDBDF8 /* libz.dylib */,
 				6FBAF5661724428F00C8E3D1 /* UIKit.framework */,
 				6F7A9F2D171A5CD3004B1575 /* CoreBluetooth.framework */,
@@ -350,11 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2410203C1A17F5D700C2BDFC /* release_notes.md in Sources */,
 				6F7A9F04171A1732004B1575 /* main.m in Sources */,
 				6F7A9F08171A1732004B1575 /* BYBAppDelegate.m in Sources */,
 				6F7A9F2C171A338C004B1575 /* BYBRoboRoachViewController.m in Sources */,
-				2410203B1A17F5D700C2BDFC /* README.md in Sources */,
 				6F7A9F31171A64C0004B1575 /* BYBRoboRoachManager.m in Sources */,
 				6F938D24171F32EF0084E06A /* BYBRoboRoachSettingsViewController.m in Sources */,
 				6F938D2D171F42A10084E06A /* BYBRoboRoach.m in Sources */,
@@ -430,6 +404,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Static\\\\\\ Frameworks\\\\",
@@ -445,7 +420,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoboRoach/RoboRoach-Prefix.pch";
 				INFOPLIST_FILE = "RoboRoach/RoboRoach-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/TestFlight",
 					"$(PROJECT_DIR)/TestFlightSDK3.0.2",
@@ -454,6 +429,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos8.1;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -467,6 +443,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Static\\\\\\ Frameworks",
@@ -482,7 +459,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoboRoach/RoboRoach-Prefix.pch";
 				INFOPLIST_FILE = "RoboRoach/RoboRoach-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/TestFlight",
 					"$(PROJECT_DIR)/TestFlightSDK3.0.2",
@@ -490,7 +467,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "22e5f549-6433-4257-bd8d-1a6376aa1261";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2d19e462-1510-416a-932e-0776390a8adb";
+				SDKROOT = iphoneos8.1;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;

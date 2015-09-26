@@ -7,11 +7,9 @@
 //
 //
 
-#import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h> 
 
-#ifdef TESTFLIGHT
-#import "TestFlight.h"
-#endif
+
 
 @interface BYBAppDelegate : UIResponder <UIApplicationDelegate>
 
